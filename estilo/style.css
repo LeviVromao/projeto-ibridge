@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body{
+font-size: 100%;
+padding: 0;
+height:100vh;
+width: 1257PX;
+}
+.content{
+height: 451px;
+width: 742px;
+overflow: hidden;
+border-radius: 20px;
+position: relative;
+left: 300px;
+margin-bottom: 57px
+}
+.navigation{
+    position: absolute;
+    left: 116px;
+    display:flex;
+    transform: translate(50%);
+    bottom: 20px;
+}
+.barra{
+    width:70px;
+    height: 18px;
+    border: 2px solid #bbed9f;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .4s
+}
+.barra:hover{
+    background-color: #71dc3f;
+}
+.slides input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 446%;
+    height: 100%;
+}
+.slide{
+    width: 33%;
+    transition: .6s
+}
+.slide img{
+    width: 100%;
+    height: 100%
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -33.3333333%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -66.6666666%;
+}
+.sistema-completo{
+    font-size: 20px;
+    display: flex;
+    color: #717B8B;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.novidades{
+font-size: 30px;
+display: flex;
+justify-content: space-around;
+font-family: 'Montserrat'
+}
+.cabeçalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9px;
+}
+.cabeçalho-menu{
+    display: flex;
+    gap: 32px;
+}
+.cabeçalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+}
+.banner1{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #0f0f0f0a;
+}
+.principal-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 595px;
+    margin-bottom: 90px;
+}
+.titulo-propaganda{
+    font-weight:700;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif
+}
+.subtitulo-propaganda{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    color: #717B8B;
+    font-weight: 600;
+    font-size: 20px
+
+}
+.formulario{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px 0px #00000026;
+    width: 400px;
+    max-width: 100%;
+    position: absolute;
+    right: 16px
+}
+.cabeçalho-formulario{
+    background-color: #eee;
+    padding: 20px
+}
+.campo{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative
+}
+.campo label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: 'Montserrat'
+}
+.campo input{
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    display:block;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.campo i {
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    visibility: hidden;
+}
+.campo small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.campo button{
+    background-color: #71dc3f;
+    border: 2px solid #bbed9f ;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+}
+.titulo{
+    color: #707B8B;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    justify-content: space-evenly;
+    display: flex;
+}
+.subtitulo{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 20px;
+    color:#000000;
+    display: flex;
+    justify-content: center;
+}
+.propaganda{
+    position: absolute;
+    left: 57px;
+    top:249px
+}
+.clientes-principal{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+    margin-bottom: 62px;
+}
+.background-color{
+    background: #F2F2F2;
+}
+.clientes{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.depoimento-gabriela{
+    display:flex;
+    border: 1px solid #d9d9d9;
+    padding: 14px;
+    border-radius: 10px
+}
+.depoimento-rafael{
+    display: flex;
+    margin-left: 27px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 14px
+}
+.ajuste{
+    display: flex;
+    justify-content: center
+}
+.div-gabriela{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-h3{
+    height: 184px;
+    font-size: 20px;
+    color: #717b8b;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}
+.h4-gabriela{
+    padding-top: 78px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}.h5-gabriela{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    color: #717b8b;
+}
+.div-rafael{
+    display: flex;
+    flex-direction: column
+}.rafael-h3{
+    height: 184px;
+    font-size: 20px;
+    color: #717b8b;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}.h4-rafael{
+    padding-top: 78px;
+}
+.h5-rafael{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans';
+    color: #717b8b
+}
+.produtos{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+}
+.paragrafo-lorem{
+    color: #717b8b;
+    font-weight: 400;
+    font-family: 'Monserrat';
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+.Aspas{
+    background-color: #B8F16F;
+    position: relative;
+    top: -32px;
+    left: -6px;
+    width: 27px;
+    border: 6px solid #B8F16F;
+    border-radius: 51px;
+    height: 30px;
+}
+.vetor{
+    position: absolute;
+}
+.Discador{
+    position: relative;
+    top: -391px;
+    width: 375px;
+    height: 457px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 30px;
+}
+.televendas{
+    position: relative;
+    top: -777px;
+    right: -416px;
+    width: 375px;
+    height: 457px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 57px;
+}
+.atendimento{
+    position: relative;
+    bottom: 1156px;
+    left: 432px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    gap: 10px;
+    display: flex;
+    padding-top: 44px;
+    height: 298px;
+    width: 318px;
+    flex-direction: column;
+}
+.solucoes-confiaveis{
+    position: relative;
+    top: -698px;
+    left: 11px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 44px;
+    height: 298px;
+    width: 341px;
+}
+.DNA{
+    position: relative;
+    top: -913px;
+    right: 406px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+    gap: 10px;
+    width: 341px;
+    height: 298px;
+}
+.trabalhos-da-empresa{
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   height: 836px
+}
+.Discagem{
+    position: relative;
+    left: -395px;
+    top: 4px;
+    width: 375px;
+    height: 457px;
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 52px;  
+}
+.lampada{
+    position:relative;
+}
+.DNA img{
+    position:relative;
+}
+.solucoes-confiaveis img{
+    position:relative;
+}
+.televendas img{
+    position:relative;
+    left: 25px;
+}
+.Discador img{
+    position:relative;
+    left: 16px
+}
+.telefone{
+    position: relative;
+    height: 50px;
+    left: 15px;
+    top: -23px;
+}
+.Discagem h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.Discagem p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.imagem-disc{
+    height:30px
+}
+.Discador h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px; 
+}
+.Discador p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.televendas h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.televendas p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.lampada{
+    top: 1px;
+    position: relative;
+    left: -22px;
+}
+.atendimento h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.atendimento p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.solucoes-confiaveis h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+} 
+.solucoes-confiaveis p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.setinha{
+    position: relative;
+    left:16px
+}
+.cronometro{
+    left: 15px;
+    position: relative;
+}
+.DNA h1{
+    height: 29px;
+    position: relative;
+    left: 13px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+.DNA p{
+    position: relative;
+    left: 20px;
+    color: #717B8B;
+    font-family: 'Montserrat';
+    font-size: 14px;  
+}
+.lampada1{
+    position: relative;
+    top: -16px;
+    left: 20px;
+}
